@@ -42,18 +42,18 @@ if (button && input) {
 // user.age = '15';
 // user.name = 1;
 
-// 4:
+// 3.3:
 // type eventType = 'lesson' | 'deadline';
 // const event: eventType = 'deadline';
 
-type size = 'small' | 'medium' | 'large';
+// type size = 'small' | 'medium' | 'large';
 
-type User = { name: string; age: number | string };
+// type User = { name: string; age: number | string };
 
-const user: User = {
-  name: 'Bob',
-  age: 12,
-};
+// const user: User = {
+//   name: 'Bob',
+//   age: 12,
+// };
 
-user.age = '15';
-user.name = 'Bobby';
+// user.age = '15';
+// user.name = 'Bobby';
