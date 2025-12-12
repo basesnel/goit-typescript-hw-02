@@ -6,11 +6,15 @@ if (button && input) {
         concatenation(input.value, 'hello!');
     });
 }
-let total = 100;
-let name = 'Bob';
-let isActive = false;
-let empty = null;
-let undf = undefined;
+// 1:
+// let total: number = 100;
+// let name: string = 'Bob';
+// let isActive: boolean = false;
+// let empty: null = null;
+// let undf: undefined = undefined;
 // let age = 10;
 // age = '12';
+// 2:
+// const numbers: number[] = [1, 2, 3, 4, 0];
+// numbers.push('12');
 //# sourceMappingURL=index.js.map
