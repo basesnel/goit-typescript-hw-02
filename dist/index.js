@@ -46,4 +46,8 @@ if (button && input) {
 // let age: any = 12;
 // age = 'Bob';
 // age = false;
+// 5
+// let age: unknown = 12;
+// age = 'Bob';
+// age.toFixed()
 //# sourceMappingURL=index.js.map
