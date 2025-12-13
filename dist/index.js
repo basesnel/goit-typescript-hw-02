@@ -59,4 +59,21 @@ if (button && input) {
 // }
 // const button1: size = 'large';
 // const button2: Sizes = Sizes.large;
+// 7
+// function addNums(num1: number, num2: number): string {
+//   return `${num1} + ${num2}`;
+// }
+// console.log(addNums(2, 3));
+// function addNums2(num1: number, num2: number): void {
+//   console.log(num1 + num2);
+// }
+// addNums2(2, 3);
+// type User = { name: string };
+// function greet(user: User): void {
+//   console.log(`Hello, ${user.name}!`);
+// }
+// type User = { name: string; age: number; hobby: string };
+// function userConstructor(name: string, age: number, hobby: string): User {
+//   return { name, age, hobby };
+// }
 //# sourceMappingURL=index.js.map
