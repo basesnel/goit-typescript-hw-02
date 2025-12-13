@@ -57,3 +57,8 @@ if (button && input) {
 
 // user.age = '15';
 // user.name = 'Bobby';
+
+// 4
+// let age: any = 12;
+// age = 'Bob';
+// age = false;
