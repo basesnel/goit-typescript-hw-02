@@ -3,7 +3,7 @@
     "@web/dev-server": "^0.4.6",
     "typescript": "^5.9.3"
   },
-  "name": "goit-typescript-hw-01",
+  "name": "goit-typescript-hw-02",
   "version": "1.0.0",
   "description": "",
   "main": "",
@@ -13,13 +13,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/basesnel/goit-typescript-hw-01.git"
+    "url": "git+https://github.com/basesnel/goit-typescript-hw-02.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/basesnel/goit-typescript-hw-01/issues"
+    "url": "https://github.com/basesnel/goit-typescript-hw-02/issues"
   },
-  "homepage": "https://github.com/basesnel/goit-typescript-hw-01#readme"
+  "homepage": "https://github.com/basesnel/goit-typescript-hw-02#readme"
 }
