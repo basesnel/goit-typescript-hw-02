@@ -5,8 +5,8 @@
   },
   "name": "goit-typescript-hw-01",
   "version": "1.0.0",
-  "description": "Commands for local typescript:",
-  "main": "test.js",
+  "description": "",
+  "main": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "web-dev-server --node-resolve --open --watch"
