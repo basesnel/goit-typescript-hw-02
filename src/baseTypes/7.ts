@@ -11,15 +11,15 @@ const enum week {
 function isWeekend(day: week): string {
   switch (day) {
     case week.MON:
-      return 'This day is work';
+      return 'This day is weekday';
     case week.TUE:
-      return 'This day is work';
+      return 'This day is weekday';
     case week.WED:
-      return 'This day is work';
+      return 'This day is weekday';
     case week.THU:
-      return 'This day is work';
+      return 'This day is weekday';
     case week.FRI:
-      return 'This day is work';
+      return 'This day is weekday';
     case week.SAT:
       return 'This day is weekend';
     case week.SUN:
@@ -39,4 +39,4 @@ function isWeekend2(day: week): string {
   return 'This day is wrong';
 }
 
-isWeekend2(week.FRI);
+export { week, isWeekend, isWeekend2 };
