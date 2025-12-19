@@ -1,5 +1,6 @@
 import { isWeekend, isWeekend2, week } from './baseTypes/7';
 import { page1, page2 } from './baseTypes/9';
+import { getPromise } from './generic/1';
 console.log(`${week.MON} - ${isWeekend(week.MON)}`);
 console.log(`${week.TUE} - ${isWeekend(week.TUE)}`);
 console.log(`${week.WED} - ${isWeekend(week.WED)}`);
@@ -16,4 +17,7 @@ console.log(`${week.SAT} - ${isWeekend2(week.SAT)}`);
 console.log(`${week.SUN} - ${isWeekend2(week.SUN)}`);
 console.log(page1);
 console.log(page2);
+getPromise().then(data => {
+    console.log(data);
+});
 //# sourceMappingURL=index.js.map
