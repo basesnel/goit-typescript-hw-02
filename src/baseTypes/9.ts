@@ -1,3 +1,5 @@
+// У вас є два об'єкти:
+
 type Page = {
   title: string;
   likes: number;
@@ -28,3 +30,5 @@ const page2: Page = {
 };
 
 export { page1, page2 };
+
+// Створіть новий тип даних, який підходить для цих двох об'єктів.

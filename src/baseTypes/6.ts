@@ -1,3 +1,5 @@
+// У вас є такі функції JavaScript:
+
 function showMessage(message: string): void {
   console.log(message);
 }
@@ -11,3 +13,5 @@ function customError(): never {
 }
 
 export {};
+
+// Як ви вкажете типи для аргументів і значень цих функцій, що повертаються?

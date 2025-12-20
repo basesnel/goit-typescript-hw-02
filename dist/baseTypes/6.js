@@ -1,3 +1,4 @@
+// У вас є такі функції JavaScript:
 function showMessage(message) {
     console.log(message);
 }
@@ -8,4 +9,5 @@ function customError() {
     throw new Error('Error');
 }
 export {};
+// Як ви вкажете типи для аргументів і значень цих функцій, що повертаються?
 //# sourceMappingURL=6.js.map
