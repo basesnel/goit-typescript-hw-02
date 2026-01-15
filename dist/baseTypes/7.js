@@ -39,5 +39,27 @@ function isWeekend2(day) {
         return 'This day is weekend';
     return 'Wrong day of the week';
 }
-export { Week, isWeekend, isWeekend2 };
+var Weekdays;
+(function (Weekdays) {
+    Weekdays["MON"] = "Monday";
+    Weekdays["TUE"] = "Tuesday";
+    Weekdays["WED"] = "Wednesday";
+    Weekdays["THU"] = "Thuesday";
+    Weekdays["FRI"] = "Friday";
+})(Weekdays || (Weekdays = {}));
+var Weekends;
+(function (Weekends) {
+    Weekends["SAT"] = "Saturday";
+    Weekends["SUN"] = "Sunday";
+})(Weekends || (Weekends = {}));
+function isWeekend3(day) {
+    var _a;
+    const dayKey = (_a = Object.keys(Week)[Object.values(Week).indexOf(day)]) !== null && _a !== void 0 ? _a : 'NONE';
+    if (dayKey in Weekdays)
+        return 'This day is weekday';
+    if (dayKey in Weekends)
+        return 'This day is weekend';
+    return 'Wrong day of the week';
+}
+export { Week, isWeekend, isWeekend2, isWeekend3 };
 //# sourceMappingURL=7.js.map

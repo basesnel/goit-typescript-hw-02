@@ -1,7 +1,7 @@
 // Створіть функцію (isWeekend), яка приймає день тижня (з вашого enum)
 // і повертає boolean значення, що вказує, чи це день робочий чи вихідний.
 
-const enum Week {
+enum Week {
   MON = 'Monday',
   TUE = 'Tuesday',
   WED = 'Wednesday',
@@ -42,4 +42,27 @@ function isWeekend2(day: Week): string {
   return 'Wrong day of the week';
 }
 
-export { Week, isWeekend, isWeekend2 };
+enum Weekdays {
+  MON = 'Monday',
+  TUE = 'Tuesday',
+  WED = 'Wednesday',
+  THU = 'Thuesday',
+  FRI = 'Friday',
+}
+
+enum Weekends {
+  SAT = 'Saturday',
+  SUN = 'Sunday',
+}
+
+function isWeekend3(day: Week): string {
+  const dayKey: string | undefined =
+    Object.keys(Week)[Object.values(Week).indexOf(day)] ?? 'NONE';
+
+  if (dayKey in Weekdays) return 'This day is weekday';
+  if (dayKey in Weekends) return 'This day is weekend';
+
+  return 'Wrong day of the week';
+}
+
+export { Week, isWeekend, isWeekend2, isWeekend3 };

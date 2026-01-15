@@ -1,4 +1,4 @@
-declare const enum Week {
+declare enum Week {
     MON = "Monday",
     TUE = "Tuesday",
     WED = "Wednesday",
@@ -9,5 +9,6 @@ declare const enum Week {
 }
 declare function isWeekend(day: Week): string;
 declare function isWeekend2(day: Week): string;
-export { Week, isWeekend, isWeekend2 };
+declare function isWeekend3(day: Week): string;
+export { Week, isWeekend, isWeekend2, isWeekend3 };
 //# sourceMappingURL=7.d.ts.map
