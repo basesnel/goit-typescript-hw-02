@@ -1,7 +1,7 @@
 // Створіть функцію (isWeekend), яка приймає день тижня (з вашого enum)
 // і повертає boolean значення, що вказує, чи це день робочий чи вихідний.
 
-const enum week {
+const enum Week {
   MON = 'Monday',
   TUE = 'Tuesday',
   WED = 'Wednesday',
@@ -11,35 +11,35 @@ const enum week {
   SUN = 'Sunday',
 }
 
-function isWeekend(day: week): string {
+function isWeekend(day: Week): string {
   switch (day) {
-    case week.MON:
+    case Week.MON:
       return 'This day is weekday';
-    case week.TUE:
+    case Week.TUE:
       return 'This day is weekday';
-    case week.WED:
+    case Week.WED:
       return 'This day is weekday';
-    case week.THU:
+    case Week.THU:
       return 'This day is weekday';
-    case week.FRI:
+    case Week.FRI:
       return 'This day is weekday';
-    case week.SAT:
+    case Week.SAT:
       return 'This day is weekend';
-    case week.SUN:
+    case Week.SUN:
       return 'This day is weekend';
     default:
-      return 'This day is wrong';
+      return 'Wrong day of the week';
   }
 }
 
-function isWeekend2(day: week): string {
-  const weekdays = [week.MON, week.TUE, week.WED, week.THU, week.FRI];
-  const weekends = [week.SAT, week.SUN];
+function isWeekend2(day: Week): string {
+  const weekdays = [Week.MON, Week.TUE, Week.WED, Week.THU, Week.FRI];
+  const weekends = [Week.SAT, Week.SUN];
 
   if (weekdays.includes(day)) return 'This day is weekday';
   if (weekends.includes(day)) return 'This day is weekend';
 
-  return 'This day is wrong';
+  return 'Wrong day of the week';
 }
 
-export { week, isWeekend, isWeekend2 };
+export { Week, isWeekend, isWeekend2 };
