@@ -52,9 +52,20 @@ var Weekends;
     Weekends["SAT"] = "Saturday";
     Weekends["SUN"] = "Sunday";
 })(Weekends || (Weekends = {}));
-function isWeekend3(day) {
+function findEnumKey(value) {
     var _a;
-    const dayKey = (_a = Object.keys(Week)[Object.values(Week).indexOf(day)]) !== null && _a !== void 0 ? _a : 'NONE';
+    return (_a = Object.keys(Week)[Object.values(Week).indexOf(value)]) !== null && _a !== void 0 ? _a : 'NONE';
+}
+// function getEnumKeyByValue<
+//   T extends Record<string, string | number>,
+//   V extends string | number
+// >(enumObj: T, value: V): string | undefined {
+//   return (Object.keys(enumObj) as (keyof T)[]).find(
+//     key => enumObj[key] === value
+//   );
+// }
+function isWeekend3(day) {
+    const dayKey = findEnumKey(day);
     if (dayKey in Weekdays)
         return 'This day is weekday';
     if (dayKey in Weekends)

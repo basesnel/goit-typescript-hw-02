@@ -55,9 +55,21 @@ enum Weekends {
   SUN = 'Sunday',
 }
 
+function findEnumKey(value: Week): string {
+  return Object.keys(Week)[Object.values(Week).indexOf(value)] ?? 'NONE';
+}
+
+// function getEnumKeyByValue<
+//   T extends Record<string, string | number>,
+//   V extends string | number
+// >(enumObj: T, value: V): string | undefined {
+//   return (Object.keys(enumObj) as (keyof T)[]).find(
+//     key => enumObj[key] === value
+//   );
+// }
+
 function isWeekend3(day: Week): string {
-  const dayKey: string | undefined =
-    Object.keys(Week)[Object.values(Week).indexOf(day)] ?? 'NONE';
+  const dayKey: string | undefined = findEnumKey(day);
 
   if (dayKey in Weekdays) return 'This day is weekday';
   if (dayKey in Weekends) return 'This day is weekend';
